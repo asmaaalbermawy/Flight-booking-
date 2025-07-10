@@ -1,0 +1,95 @@
+// File: app/flights/Flights.module.scss
+
+.flightsPage {
+  padding: 0;
+  background-color: #f5f8fc;
+  min-height: 100vh;
+}
+
+.heroCard {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  margin-top: -8px; /* Reduce gap below navbar even more */
+}
+
+.heroImage {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
+
+.results {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.results h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #003580;
+}
+
+.flightList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.flightCard {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.details p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #003580;
+}
+
+.bookBtn {
+  background-color: #ffd400;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bookBtn:hover {
+  background-color: #e6be00;
+}

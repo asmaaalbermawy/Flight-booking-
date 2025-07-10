@@ -1,0 +1,70 @@
+.resultsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+  background: #f9f9f9;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.heroImage {
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: white;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+}
+
+.flightCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  width: 100%;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.flightCard h2 {
+  margin-bottom: 1rem;
+  color: #003580;
+}
+
+.details p {
+  margin: 0.4rem 0;
+}
+
+.price {
+  color: #e63946;
+  font-weight: bold;
+}
+
+.selectButton {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #003580;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.selectButton:hover {
+  background: #0052cc;
+}
